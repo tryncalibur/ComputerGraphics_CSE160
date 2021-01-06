@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head> 
+		<meta charset="utf-8" /> 
+		<title>Paint Program</title> 
+	</head> 
+
+	<body onload="main()">
+		<canvas id="canvas" width="400" height="400"> Please use the browser supporting "canvas". </canvas>
+		<p></p>
+
+		<input type="button" value="Clear Canvas" id="clear">
+		<p></p>
+
+		<p>Drawing Modes:</p>
+		<input type="button" value="Triangle" id="triangle">
+		<input type="button" value="Circle" id="circle">
+		<p></p>
+
+		<p>Shape Color:</p>
+		<label for="red">Red</label>
+		<input type="range" id="red" name="red" min="0" max="1" step="0.01">
+		<label for="blue">Blue</label>
+		<input type="range" id="blue" name="blue" min="0" max="1" step="0.01">
+		<label for="green">Green</label>
+		<input type="range" id="green" name="green" min="0" max="1" step="0.01">
+		<p></p>
+		<label for="size">Shape Size: </label>
+		<input type="range" id="size" name="size" min="0.008" max="1" step="0.001">
+		<label for="seg">Segment Count(circle) </label>
+		<input type="range" id="seg" name="seg" min="4" max="35" step="1">
+		<p></p>
+
+		<p>Extra Features:</p>
+		<input type="range" id="alpha" name="alpha" min="0" max="1" step="0.01" value="1.0">
+		<label for="alpha">Alpha</label>
+		<p></p>
+		<input type="button" value="Rainbow: Off" id="rainbow">
+
+
+		<script src="lib/webgl-utils.js"></script> 
+		<script src="lib/webgl-debug.js"></script> 
+		<script src="lib/cuon-utils.js"></script> 
+		<script src="src/Draw.js"></script>
+	</body> 
+</html>

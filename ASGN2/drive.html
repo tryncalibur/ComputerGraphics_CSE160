@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head> 
+		<meta charset="utf-8" /> 
+		<title>Block 3D Animal</title> 
+	</head> 
+
+	<body onload="main()">
+		<canvas id="canvas" width="400" height="400"> Please use the browser supporting "canvas". </canvas>
+		<p></p>
+
+		<label for="rotation">Rotation</label>
+		<input type="range" id="rotation" name="rotation" min="-180" max="180" step="1" value="0">
+		<p></p>
+		<input type="button" value="Play" id="ani">
+
+		<script src="lib/webgl-utils.js"></script> 
+		<script src="lib/webgl-debug.js"></script> 
+		<script src="lib/cuon-utils.js"></script> 
+		<script src="lib/cuon-matrix.js"></script> 
+		<script src="src/3dOp.js"></script>
+	</body> 
+</html>
